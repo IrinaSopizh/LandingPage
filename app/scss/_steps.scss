@@ -1,0 +1,75 @@
+.steps{
+    &__bg{
+        background-color: var(--first-color);
+        padding: 3rem 2rem 2rem;
+        border-radius: 1rem;
+    }
+    &__container{
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+    &__title{
+        color: #fff;
+    }
+    &__card{
+        background-color: var(--container-color);
+        padding: 2.5rem 3rem 2rem 1.5rem;
+        border-radius: 1rem;
+        &-number{
+            display: inline-block;
+            background-color: $first-color-alt;
+            color: #fff;
+            padding: .5rem .75rem;
+            border-radius: .25rem;
+            font-size: $h2-font-size;
+            margin-bottom: $mb-1-5;
+            transition: .3s;
+        }
+        &-title{
+            font-size: $h3-font-size;
+            margin-bottom: $mb-0-5;
+        }
+        &-description{
+            font-size: $small-font-size;
+        }
+        &:hover
+        &-number{
+            transform: translateY(-.25rem);
+        }
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .steps{
+        &__bg{
+            padding: 2rem 1rem;
+        }
+        &__card{
+            padding: 1.5rem;
+        }
+    }
+}
+    
+@media screen and (min-width: 576px) {
+    .steps{
+        &__container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .steps{
+        &__container{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__bg{
+            padding: 3.5em 2.5rem;
+        }
+        &__card-title{
+            font-size: $normal-font-size;
+        }
+    }
+}
+
