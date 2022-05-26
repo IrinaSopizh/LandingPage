@@ -2,10 +2,10 @@
     padding: 3.5rem 0 2rem;
     &__container{
         position: relative;
-        row-gap: 2rem;
+        row-gap: 1rem;
     }
     &__img{
-        width: 200px;
+        width: 100%;
         justify-self: center;
     }
     &__title{
@@ -56,7 +56,7 @@
 @media screen and (max-width: 320px) {
     .home{
         &__img{
-            width: 180px;
+            // width: 180px;
         }
         &__title{
             font-size: $h1-font-size;
@@ -68,7 +68,7 @@
     .home{
         padding: 10rem 0 5rem;
         &__img{
-            width: 280px;
+            // width: 280px;
             order: 1;
         }
         &__title{
@@ -96,9 +96,9 @@
         &__title{
             font-size: 3rem;
         }
-        &__img{
+        /* &__img{
             width: 350px;
-        }
+        } */
         &__description{
             padding-right: 7rem;
         }
@@ -108,7 +108,6 @@
 @media screen and (min-width: 1200px) {
     .home{
         &__social{
-            right: -3rem;
             row-gap: 4.5rem;
             &-follow{
                 font-size: $small-font-size;

@@ -132,7 +132,7 @@ themeButton.addEventListener('click', () => {
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2500,
+    duration: 2000,
     delay: 400,
     //reset: true
 })
@@ -140,8 +140,8 @@ const sr = ScrollReveal({
 sr.reveal('.home__data')
 sr.reveal('.home__img', {delay: 500})
 sr.reveal('.home__social', {delay: 600})
-sr.reveal('.about__img, .contact__box', {origin: 'left'})
-sr.reveal('.about__data, .contact__form, .footer', {origin: 'right'})
+sr.reveal('.about__img, .contact__box', {origin: 'right'})
+sr.reveal('.about__data, .contact__form, .footer', {origin: 'left'})
 sr.reveal('.steps__card, .product__card, .questions__group', {interval: 100})
 
 

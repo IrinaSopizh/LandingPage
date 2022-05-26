@@ -1,36 +1,37 @@
 $header-height: 3.5rem;
 
 /*=========colors=========*/
-$hue: 152;
-$first-color: hsl($hue, 24%, 32%);
+$hue: 300;
+$first-color: hsl($hue, 57%, 50%);
 $first-color-alt: hsl($hue, 24%, 28%);
 $first-color-light: hsl($hue, 24%, 66%);
-$first-color-lighten: hsl($hue, 24%, 92%);
+$first-color-lighten: hsl($hue, 40%, 90%, 0.7);
 $text-color-light: hsl($hue, 4%, 55%);
 
 body{
-    --first-color: hsl(152, 24%, 32%);
-    --title-color: hsl(152, 4%, 15%);
-    --text-color: hsl(152, 4%, 35%);
-    --body-color: hsl(152, 0%, 100%);
+    --hue: 300;
+    --first-color: hsl(var(--hue), 57%, 50%);
+    --title-color: hsl(var(--hue), 4%, 15%);
+    --text-color: hsl(var(--hue), 4%, 35%);
+    --body-color: hsl(var(--hue), 0%, 100%);
     --container-color: #fff;
 }
 
 
 /*=========colors dark/light =========*/
 body.dark-theme{
-    --first-color: hsl(152, 8%, 20%);
-    --title-color: hsl(152, 4%, 95%);
-    --text-color: hsl(152, 4%, 75%);
-    --body-color: hsl(152, 8%, 12%);
-    --container-color:hsl(152, 8%, 16%);
+    --first-color: hsl(var(--hue), 40%, 48%);
+    --title-color: hsl(var(--hue), 4%, 95%);
+    --text-color: hsl(var(--hue), 4%, 75%);
+    --body-color: hsl(var(--hue), 8%, 12%);
+    --container-color:hsl(var(--hue), 8%, 16%);
 }
 
 
 /*=======font and typography===========*/
 /*.5rem = 8px / 1rem = 16px*/
 $body-font: 'Poppins', sans-serif;
-$big-font-size: 2rem;
+$big-font-size: 1.8rem;
 $h1-font-size: 1.5rem;
 $h2-font-size: 1.25rem;
 $h3-font-size: 1rem;

@@ -10,6 +10,56 @@
     .scroll__header{
         box-shadow: 0 1px 4px hsla($hue, 4%, 4%, .3);
     }
+    .nav{
+        &__logo,
+        &__logo-icon{
+            color: #fff;
+        }
+    }
+    .footer{
+        &__logo-icon,
+        &__logo {
+            color: #fff;
+        }
+        &__input{
+            color: #fff;
+        }
+
+    }
+    .home{
+        &__social{
+            &-follow,
+            &-link{
+                color: #fff;
+            }
+            &-follow{
+                &:after{
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    .about{
+        &__details{
+            &-icon{
+               color: $first-color-alt;
+            }
+        }
+        .button{
+            &-link{
+                color: $first-color-alt;
+            }
+        }
+    }
+    .contact{
+        &__icon{
+            color: $first-color-alt;
+        }
+        &__input{
+            color: #fff;
+        }
+    }
+    
 }
 
 

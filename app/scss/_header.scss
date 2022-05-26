@@ -15,29 +15,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__logo,
     &__toggle,
     &__close{
         color: var(--title-color);
     }
     &__logo{
         text-transform: uppercase;
+        color: var(--first-color);
         font-weight: 700;
         letter-spacing: -1px;
         display: inline-flex;
         align-items: center;
         column-gap: .5rem;
         transition: .3s;
-
+        
         &-icon{
             font-size: 1.15rem;
             color: var(--first-color);
         }
-
+        
         &:hover{
-            color: var(--first-color);
+            color: var(--title-color);
         } 
     }
+    
+
     &__toggle{
         display: inline-flex;
         font-size: 1.25rem;
